@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Blogin</title>
+</head>
+
+<body>
+
+    <section class="screen" onclick="toggleMenu()"></section>
+   
+
+    <header class="main-header">
+        <div class="header-container container flex align-center space-between">
+            <div class="logo">Blogin<span class='logo-dot'>.</span></div>
+            <div class="main-nav container flex flex-end flex-grow"> <!-- todo understand flex-grow here.. -->
+                <div class="nav-box">Journal</div>
+                <div class="nav-box">About</div>
+                <div class="nav-box">Work</div>
+                <div class="nav-box">Contact</div>
+            </div>
+            <button onclick="toggleMenu()" class="btn-menu"></button> 
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <article class="article flex warp space-between">
+            <div class="img-container"><img class="article-image" src="img/img1.png" alt=""></div>
+            <div class="article-content flex column space-between">
+                <h1 class="article-title">Duis aute irure dolor in henderit in voluptate.</h1>
+                <p class="article-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="continue-btn">Continue Reading</button>
+            </div>
+        </article>
+
+        <article class="article flex flex-start">
+            <div class="img-container"><img class="article-image" src="img/img2.png" alt=""></div>
+            <div class="article-content flex column space-between">
+                <h1 class="article-title">Duis aute irure dolor in 
+                    henderit in voluptate.</h1>
+                <p class="article-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="continue-btn">Continue Reading</button>
+            </div>
+        </article>
+
+
+        <article class="article flex flex-start">
+            <div class="img-container"><img class="article-image" src="img/img3.png" alt=""></div>
+            <div class="article-content flex column space-between">
+                <h1 class="article-title">Duis aute irure dolor in 
+                    henderit in voluptate.</h1>
+                <p class="article-text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/> 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                </p>  
+                <button class="continue-btn">Continue Reading</button>
+            </div>
+        </article>
+
+    </main>
+
+    <nav class="nav-content nav-container container flex space-between">
+        <div class="nav-direction flex"><img src="img/arrow_left.png">Previous</div>
+        <div class="nav-direction flex">Next<img src="img/arrow_right.png"></div>
+    </nav>
+
+    <footer class="footer-content flex column justify-center align-center">
+        <div class="logo">Blogin<span class='logo-dot'>.</span></div>
+        <small class="copy-rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a class="copy-right" href="http://www.pixelhint.com" target="_blank">Pixelhint.com</a></small>
+        <nav class="social-icons-nav flex">
+            <a class="flex social-icons facebook" href="#"><img src="img/facebook.png" alt=""></a>
+            <a class="flex social-icons twitter" href="#"><img src="img/twitter.png" alt=""></a>
+            <a class="flex social-icons be" href="#"><img src="img/be.png" alt=""></a>
+            <a class="flex social-icons inter" href="#"><img src="img/ball.png" alt=""></a>
+        </nav>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open')
+        }
+    </script>
+
+</body>
+
+</html>
