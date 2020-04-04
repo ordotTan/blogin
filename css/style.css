@@ -477,13 +477,14 @@ p {
             transform: translateX(0);
         }
 
+        /*fixing mobile-display issue in github page*/
         .img-container img {
             min-width: 300px;
             flex-basis: 80%;
          }
 
          .main-content img {
-            width:50%;
+            width:80%;
          }
 
     }
