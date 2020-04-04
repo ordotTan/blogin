@@ -482,4 +482,8 @@ p {
             flex-basis: 80%;
          }
 
+         .main-content img {
+            width:98%;
+         }
+
     }
