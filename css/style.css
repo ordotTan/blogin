@@ -449,7 +449,7 @@ p {
 @media (max-width: 550px) { 
 
     .btn-menu {
-        background: url("../img/menu.png");
+        background: url("../img/hamburger.png");
         width: 24px;
         height: 24px;
         display: inline-block;
