@@ -477,4 +477,9 @@ p {
             transform: translateX(0);
         }
 
+        .img-container img {
+            min-width: 300px;
+            flex-basis: 80%;
+         }
+
     }
