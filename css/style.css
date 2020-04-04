@@ -6,16 +6,16 @@
 
 @font-face {
     font-family: eurofurence;
-    src: url(/fonts/eurofurence/eurof55.ttf);
+    src: url(../fonts/eurofurence/eurof55.ttf);
 }
 @font-face {
     font-family: Lato;
-    src: url(/fonts/Lato/Lato-Regular.ttf);
+    src: url(../fonts/Lato/Lato-Regular.ttf);
 }
 
 @font-face {
     font-family: Lato-bold;
-    src: url(/fonts/Lato/Lato-Bold.ttf);
+    src: url(../fonts/Lato/Lato-Bold.ttf);
 }
 
  /* BASICS */
@@ -198,7 +198,7 @@ p {
 
 .continue-btn:hover::after {
     margin-left: 10px;
-    content:url(/img/arrow-cont.png)
+    content:url(../img/arrow-cont.png)
 } 
 
 
