@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -15,61 +16,76 @@
    
 
     <header class="main-header">
-        <div class="header-container container flex align-center space-between">
-            <div class="logo">Blogin<span class='logo-dot'>.</span></div>
-            <div class="main-nav container flex flex-end flex-grow"> <!-- todo understand flex-grow here.. -->
-                <div class="nav-box">Journal</div>
-                <div class="nav-box">About</div>
-                <div class="nav-box">Work</div>
-                <div class="nav-box">Contact</div>
+        <div class="container flex align-center space-between">
+            <div class="logo">
+                <h1>Blogin<span class='logo-dot'>.</span></h1>
             </div>
+            <ul class="main-nav clean-list flex">
+                <li class="flex"><a class="active" onclick="myFunc(this)" href="#">Journal</a></li>
+                <li class="flex"><a onclick="myFunc(this)" href="#">About</a onclick="myFunc(this)"></li>
+                <li class="flex"><a onclick="myFunc(this)" href="#">Work</a onclick="myFunc(this)"></li>
+                <li class="flex"><a onclick="myFunc(this)" href="#">Contact</a onclick="myFunc(this)"></li></li>
+            </ul>
             <button onclick="toggleMenu()" class="btn-menu"></button> 
         </div>
     </header>
+    
 
-    <main class="main-content container">
-        <article class="article flex warp space-between">
-            <div class="img-container"><img class="article-image" src="img/img1.png" alt=""></div>
-            <div class="article-content flex column space-between">
-                <h1 class="article-title">Duis aute irure dolor in henderit in voluptate.</h1>
-                <p class="article-text">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+    <main class="main-content container flex wrap">
+        <article class="article flex">
+            <img class="article-image" src="img/img1.png" alt="">
+            <div class="article-content flex column">
+                <h2 class="article-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button class="continue-btn">Continue Reading</button>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="article-button round-btn">Continue Reading</button>
             </div>
         </article>
 
-        <article class="article flex flex-start">
-            <div class="img-container"><img class="article-image" src="img/img2.png" alt=""></div>
-            <div class="article-content flex column space-between">
-                <h1 class="article-title">Duis aute irure dolor in 
-                    henderit in voluptate.</h1>
-                <p class="article-text">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+        <article class="article flex">
+            <img class="article-image" src="img/img2.png" alt="">
+            <div class="article-content flex column">
+                <h2 class="article-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
-                <button class="continue-btn">Continue Reading</button>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="article-button round-btn">Continue Reading</button>
             </div>
         </article>
 
 
-        <article class="article flex flex-start">
-            <div class="img-container"><img class="article-image" src="img/img3.png" alt=""></div>
-            <div class="article-content flex column space-between">
-                <h1 class="article-title">Duis aute irure dolor in 
-                    henderit in voluptate.</h1>
-                <p class="article-text">
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/><br/> 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
-                </p>  
-                <button class="continue-btn">Continue Reading</button>
+        <article class="article flex">
+            <img class="article-image" src="img/img3.png" alt="">
+            <div class="article-content flex column">
+                <h2 class="article-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                <p>
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                    doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <p>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur...
+                </p>
+                <button class="article-button round-btn">Continue Reading</button>
             </div>
         </article>
 
     </main>
 
-    <nav class="nav-content nav-container container flex space-between">
+  <!-- todo pagination with svg   -->
+
+    <nav class="pagination container flex space-between">
         <div class="nav-direction flex"><img src="img/arrow_left.png">Previous</div>
         <div class="nav-direction flex">Next<img src="img/arrow_right.png"></div>
     </nav>
@@ -78,16 +94,26 @@
         <div class="logo">Blogin<span class='logo-dot'>.</span></div>
         <small class="copy-rights">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <a class="copy-right" href="http://www.pixelhint.com" target="_blank">Pixelhint.com</a></small>
         <nav class="social-icons-nav flex">
-            <a class="flex social-icons facebook" href="#"><img src="img/facebook.png" alt=""></a>
-            <a class="flex social-icons twitter" href="#"><img src="img/twitter.png" alt=""></a>
-            <a class="flex social-icons be" href="#"><img src="img/be.png" alt=""></a>
-            <a class="flex social-icons inter" href="#"><img src="img/ball.png" alt=""></a>
+            <a class="flex-center social-icons facebook" href="#"></a>  <!-- with externl svg file as psudo element-->
+            <a class="flex-center social-icons twitter" href="#"> <!-- svg inline-->
+                <svg class="icon" aria-hidden="true" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path fill="white" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                </svg></a>
+            <a class="flex-center social-icons be" href="#"><img src="img/be.png" alt=""></a>  <!-- with regular img file-->
+            <a class="flex-center social-icons inter" href="#"><img src="img/ball.png" alt=""></a>  <!-- with regular img file-->
         </nav>
+        
     </footer>
 
     <script>
         function toggleMenu() {
             document.body.classList.toggle('menu-open')
+        }
+
+        function myFunc(elLink) {
+            const links = document.querySelectorAll('li a')
+            links.forEach(link => link.classList.remove('active'))
+            elLink.classList.add('active')
         }
     </script>
 
