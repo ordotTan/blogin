@@ -442,8 +442,8 @@ p:last-of-type {
 
     .container {
         max-width: 740px;
-        margin-right:10px;
-        margin-left:10px;
+        /* margin-right:10px;
+        margin-left:10px; */
     }
 
     img {
