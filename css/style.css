@@ -104,7 +104,8 @@ img {
 
 
 .dropdown-list {
-    top:130px;
+    /* bottom:0; */
+    transform:translateY(100%);
     width:  130px;
     position: absolute;
     z-index: 1;
@@ -162,6 +163,7 @@ li {
     text-align: center;
     font-size: 1rem;
     font-weight: 700;
+    position: relative;
 }
 
 
@@ -242,6 +244,7 @@ p:last-of-type {
     text-transform: uppercase;
     letter-spacing: 0.9px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .pagination .nav-direction:first-child {
@@ -264,7 +267,9 @@ p:last-of-type {
     margin-left: 0.5625rem;
 }
 
-
+.pagination .nav-direction:hover {
+    color: #58c93a;
+}
 
 
 /* Footer */
@@ -337,7 +342,6 @@ p:last-of-type {
    background-repeat: no-repeat;
    margin-left: 4px ; 
 }
-
 
 .social-icons.twitter:hover {
     background-color: #1c9deb;  
@@ -475,8 +479,7 @@ p:last-of-type {
 
     .container {
         max-width: 740px;
-        /* margin-right:10px;
-        margin-left:10px; */
+
     }
 
     img {
@@ -494,7 +497,6 @@ p:last-of-type {
 
 
     .dropdown-list {
-        top:100px;
         width:  100px;
       }
 
@@ -585,7 +587,8 @@ p:last-of-type {
         .menu-open .main-nav {   
             transform: translateX(0);
         }
-
+        /*todo - how to disable the onhover on mobile?*/
+        /*todo - how to show the value correctly in the hamburger menu?*/
         .show-dorp .dropdown-list {
             opacity: 1;
             visibility: visible;
